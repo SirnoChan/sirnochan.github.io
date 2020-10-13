@@ -1,0 +1,14 @@
+<footer class="c-page__footer">
+	</hr>
+	<p>
+	{% include fortune.html %}
+	</p>
+	{% if page.layout != 'amp' %}
+	</hr></br>
+	{% endif %}
+	<p>&copy; {{ site.author }} {{ 'now' | date: '%Y' }} <a href="https://creativecommons.org/licenses/by/4.0/deed.zh">CC-BY 4.0</a> | 由Jekyll生成 | 主题名：<a href="https://github.com/RedL0tus/Biu-Jekyll-Theme">Biu</a>（经修改） </p>
+	{% if page.layout != 'amp' %}
+	</br>
+	{% endif %}
+	<p>在这里关注我：{% if site.twitter_username %}<a href="https://twitter.com/{{ site.twitter_username }}">Twitter</a>{% endif %}{% if site.twitter_username %}{% if site.github_username %} & {% endif %}{% endif %}{% if site.github_username %}<a href="https://github.com/{{ site.github_username }}">Github</a>{% endif %}<span class="u-separate"></span>  <a href="{{ "/feed.xml" | prepend: site.baseurl }}">使用RSS订阅</a></p>
+</footer>

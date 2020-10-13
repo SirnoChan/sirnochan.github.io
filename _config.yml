@@ -1,0 +1,32 @@
+# Site settings
+title: SirnoChan's Tech Recycle Bin
+description: 
+  SirnoChan's Tech Recycle Bin
+author: SirnoChan
+email: sirnochan@hourai.xyz
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://sirnochan.github.io" # the base hostname & protocol for your site
+twitter_username: UntitledFairy
+github_username:  SirnoChan
+
+#disqus_shortname: YourDisqusShortname
+
+# Build settings
+include: [_pages]
+markdown: kramdown
+permalink: /:year-:month/:title
+future: true
+sass:
+    style: compressed
+
+plugins:
+  - jemoji
+  - jekyll-sitemap
+  - amp-jekyll # Acceletrated Mobile Pages
+
+# AMP Settings
+# ampdir: amp/
+# enable_amp: true
+
+# Google Analytics
+# google_analytics: UA-XXXXXXXX-X

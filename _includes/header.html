@@ -1,0 +1,12 @@
+<header class="c-page__header">
+        <h1>{{ site.description }}</h1>
+	{% if page.title == '首页' %}
+    <p>
+        <a href="{{ "/" | prepend: site.baseurl }}">首页</a><span class="u-separate"></span> <a href="{{ "/about/" | prepend: site.baseurl }}">关于</a><span class="u-separate"></span> <a href="{{ "/links/" | prepend: site.baseurl }}">外链</a>
+    </p>
+	{% else %}
+    <p>
+        <a href="{{ "/" | prepend: site.baseurl }}">&lt;&ndash;&ndash; 返回</a>
+    </p>
+	{% endif %}
+</header>
